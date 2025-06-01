@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { Star, Heart, Search, Menu, X, Instagram, Facebook, Twitter, Mail, Phone, MapPin, Eye } from 'lucide-react';
+import Image from 'next/image';
 
 const SkinnBeautyShop2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -93,7 +94,7 @@ const SkinnBeautyShop2 = () => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [heroSlides.length]);
 
   return (
     <div className="min-h-screen bg-white">
@@ -103,11 +104,7 @@ const SkinnBeautyShop2 = () => {
             <div className="flex justify-between items-center">
               <div className="w-[80px] h-[60px]  flex items-center justify-center">
                   <a href='#'>
-                       <img
-                    src="/images/SkinnLogo.jpg"
-                    alt={"logo"}
-                    className="w-full h-full object-cover"
-                  />
+                    <Image src="/images/SkinnLogo.jpg" alt="logo" className="w-full h-full object-cover" />
                   </a>
               </div>
 
@@ -233,11 +230,7 @@ const SkinnBeautyShop2 = () => {
                 className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group hover:scale-105"
               >
                 <div className="relative">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
+                    <Image src={product.image} alt={product.name} className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"/>
                   {product.badge && (
                     <span className="absolute top-4 left-4 bg-teal-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       {product.badge}
@@ -312,11 +305,7 @@ const SkinnBeautyShop2 = () => {
               </div>
             </div>
             <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=400&fit=crop"
-                alt="Beauty products showcase"
-                className="rounded-2xl shadow-2xl"
-              />
+              <Image src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=400&fit=crop" alt="Beauty products showcase" className="rounded-2xl shadow-2xl" />
               <div className="absolute inset-0 bg-gradient-to-t from-teal-500/20 to-transparent rounded-2xl"></div>
             </div>
           </div>
