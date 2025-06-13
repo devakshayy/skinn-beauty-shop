@@ -1,11 +1,13 @@
+'use client'
 import {
-  Heart,
   Search,
   Menu,
   X,
 } from "lucide-react";
+import { useState } from "react";
 
-const Header = ({isMenuOpen,setIsMenuOpen}) => {
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
      <header className="bg-white/95 backdrop-blur-md shadow-lg fixed w-full z-50 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,8 +58,6 @@ const Header = ({isMenuOpen,setIsMenuOpen}) => {
 
             <div className="flex items-center space-x-4">
               <Search className="w-6 h-6 text-gray-600 hover:text-teal-600 cursor-pointer transition-colors" />
-              <Heart className="w-6 h-6 text-gray-600 hover:text-teal-600 cursor-pointer transition-colors" />
-
               {/* Mobile Menu Button */}
               <button
                 className="md:hidden p-2"
