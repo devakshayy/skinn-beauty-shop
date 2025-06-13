@@ -13,7 +13,7 @@ const AboutSection = () => {
                 About Skinn
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Skinn is your digital showcase for discovering the world's
+                Skinn is your digital showcase for discovering the world&apos;s
                 finest beauty products. We curate and present premium skincare,
                 cosmetics, and beauty essentials from renowned brands.
               </p>

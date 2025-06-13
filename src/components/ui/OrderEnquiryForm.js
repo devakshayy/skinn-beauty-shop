@@ -101,7 +101,7 @@ const OrderEnquiryForm = () => {
             Get In Touch
           </h4>
           <p className="text-gray-600">
-            Interested in our beauty products? Fill out the form below and we'll
+            Interested in our beauty products? Fill out the form below and we&apos;ll
             get back to you.
           </p>
         </div>
