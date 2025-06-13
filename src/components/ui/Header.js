@@ -4,6 +4,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 const Header = () => {
@@ -14,11 +15,14 @@ const Header = () => {
           <div className="flex justify-between items-center">
             <div className="w-[80px] h-[60px]  flex items-center justify-center">
               <a href="#">
-                <img
-                  src="/images/SkinnLogo.jpg"
-                  alt="logo"
-                  className="w-full h-full"
-                />
+               <Image
+  src="/images/SkinnLogo.jpg"
+  alt="logo"
+  width={100} // You can adjust width
+  height={100} // You can adjust height
+  className="w-full h-full object-contain" // Tailwind classes still work
+/>
+
               </a>
             </div>
 
