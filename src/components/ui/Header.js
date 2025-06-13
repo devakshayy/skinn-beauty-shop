@@ -4,7 +4,6 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import Image from 'next/image';
 import { useState } from "react";
 
 const Header = () => {
@@ -14,13 +13,13 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="w-[80px] h-[60px]  flex items-center justify-center">
-              <Image
-  src="/images/SkinnLogo.jpg"
-  alt="logo"
-  width={80}
-  height={60}
-  className="w-full h-full object-contain"
-/>
+              <a href="#">
+                <img
+                  src="/skinnlogo.png"
+                  alt="logo"
+                  className="w-full h-full"
+                />
+              </a>
             </div>
 
             {/* Desktop Navigation */}

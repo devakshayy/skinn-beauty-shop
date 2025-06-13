@@ -15,7 +15,6 @@ export const heroSlides = [
     bg: "bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600",
   },
 ];
-
 export const products = [
   {
     id: 1,
