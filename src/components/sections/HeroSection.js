@@ -32,13 +32,13 @@ const HeroSection = () => {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="#categories" className="w-full sm:w-auto">
-            <button className="w-full sm:w-auto bg-white text-gray-800 px-6 py-4 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base">
+            <button className="w-full sm:w-auto bg-white text-gray-800 px-6 py-4 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-gray-100 active:bg-gray-100 transition-all duration-300 transform hover:scale-105 active:scale-105 shadow-lg text-sm sm:text-base">
               Explore Collection
             </button>
           </a>
 
           <a href="#gallery" className="w-full sm:w-auto">
-            <button className="w-full sm:w-auto border border-white text-white px-6 py-4 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-white hover:text-gray-800 transition-all duration-300 text-sm sm:text-base">
+            <button className="w-full sm:w-auto border border-white text-white px-6 py-4 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-white active:bg-white hover:text-gray-800 active:text-gray-800 transition-all duration-300 text-sm sm:text-base">
               View Gallery
             </button>
           </a>
